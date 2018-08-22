@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <style type="text/css">
+        body {
+            background-image: url('img/header1.jpg'); 
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: 180%;
+            position: static;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <div class="header-col1">
+            <ul>
+                <li><a href="http://localhost:3000/">HOME</a></li>
+                <li><a href="http://localhost:3000/posts">POSTS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="content-container">
+        <div class="content-col-1"></div>
+
+        <div class="content-col-2">
+            <h1 class="h1">Travel is our life...</h1>
+            <div class="slideshow-container">
+
+                
+
+            <div class="mySlides fade">
+              <img src="img_slider/slide1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img_slider/slide2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img_slider/slide3.jpg" style="width:100%">
+            </div>
+            </div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+
+
+        <div class="content-col-3"></div>
+    </div >
+    <div class="footer">
+        <p>footer</p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+<html>

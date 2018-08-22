@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <meta charset="utf-8" />
+     <style type="text/css">
+         body {
+             background-color: #A9F5A9;
+        }
+     </style>
+</head>
+<body>
+    <a href="http://localhost:3000/posts">Posts</a>
+    <div></div>
+   <form method="post" action="/posts/edit/<%= posts._id %>">
+    <div class="form-group">
+        <label for="Title">Topic</label>
+        <input class="form-control"  placeholder="Topic" type="text" name="title" value="<%= posts.title %>" required>
+    </div>
+    <div class="form-group">
+        <label for="Text">Text</label>
+        <textarea class="form-control" rows="3" name="text" required cols="30"><%= posts.text %></textarea>
+        <button type="submit" class="btn-edit" name="submit" value="save">Изменить</button>
+    <!-- <button type="submit" class="btn-cencel" name="cancel" value="Сancel" onClick="href='/posts';">Отменить</button> -->
+</form>
+    </div>
+     </style>
+    <script type="text/javascript">
+        console.log('Hello');
+    </script>
+</body>
+<html>
